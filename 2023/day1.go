@@ -30,6 +30,8 @@ func Day1_2(input string) {
 	reg := regexp.MustCompile("[0-9]")
 	var digits []string
 	sum := 0
+	//This is a little quirly but sometimes numbers can overrun eachotehr eg eightwo. Both need to be counted.
+	//First and last letters are preserved to ensure all numbers get proper conversion
 	subs := map[string]string{
 		"one":   "o1e",
 		"two":   "t2o",
