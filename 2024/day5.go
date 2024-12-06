@@ -14,7 +14,6 @@ func Day5(input string) {
 	rejects := [][]string{}
 	sum := 0
 	sum2 := 0
-
 	rulesMap := map[string][]string{}
 
 	for _, r := range rules {
@@ -37,7 +36,6 @@ func Day5(input string) {
 			mid, _ := strconv.Atoi(updatesSplit[l/2])
 			sum += mid
 		}
-
 	}
 	fmt.Printf("Day 4.1: %v\n", sum)
 

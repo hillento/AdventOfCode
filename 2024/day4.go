@@ -40,18 +40,18 @@ func Day4_2(input string) {
 	lines := strings.Split(strings.TrimSpace(input), "\n")
 	count := 0
 
-	for i := 0; i < len(lines) -2; i++ {
-		for j := 0; j < len(lines[i]) -2; j++ {
-			if string(lines[i][j]) == "M" && string(lines[i][j+2]) == "M" && string(lines[i+1][j+1]) == "A"  && string(lines[i+2][j]) == "S" && string(lines[i+2][j+2]) == "S" {
+	for i := 0; i < len(lines)-2; i++ {
+		for j := 0; j < len(lines[i])-2; j++ {
+			if string(lines[i][j]) == "M" && string(lines[i][j+2]) == "M" && string(lines[i+1][j+1]) == "A" && string(lines[i+2][j]) == "S" && string(lines[i+2][j+2]) == "S" {
 				count++
 			}
-			if string(lines[i][j]) == "S" && string(lines[i][j+2]) == "S" && string(lines[i+1][j+1]) == "A"  && string(lines[i+2][j]) == "M" && string(lines[i+2][j+2]) == "M" {
+			if string(lines[i][j]) == "S" && string(lines[i][j+2]) == "S" && string(lines[i+1][j+1]) == "A" && string(lines[i+2][j]) == "M" && string(lines[i+2][j+2]) == "M" {
 				count++
 			}
-			if string(lines[i][j]) == "M" && string(lines[i][j+2]) == "S" && string(lines[i+1][j+1]) == "A"  && string(lines[i+2][j]) == "M" && string(lines[i+2][j+2]) == "S" {
+			if string(lines[i][j]) == "M" && string(lines[i][j+2]) == "S" && string(lines[i+1][j+1]) == "A" && string(lines[i+2][j]) == "M" && string(lines[i+2][j+2]) == "S" {
 				count++
 			}
-			if string(lines[i][j]) == "S" && string(lines[i][j+2]) == "M" && string(lines[i+1][j+1]) == "A"  && string(lines[i+2][j]) == "S" && string(lines[i+2][j+2]) == "M" {
+			if string(lines[i][j]) == "S" && string(lines[i][j+2]) == "M" && string(lines[i+1][j+1]) == "A" && string(lines[i+2][j]) == "S" && string(lines[i+2][j+2]) == "M" {
 				count++
 			}
 		}
@@ -77,7 +77,7 @@ func reverseRows(mat [][]string) [][]string {
 	for i := range mat {
 		r := []string{}
 		for j := range mat[i] {
-		r = append(r, mat[i][len(mat)-1-j])
+			r = append(r, mat[i][len(mat)-1-j])
 		}
 		revs = append(revs, r)
 	}
@@ -94,10 +94,10 @@ func getDiagonals(mat [][]string) [][]string {
 		}
 		diags = append(diags, d)
 	}
-	//diagonal left to right going from corner + 1 to the right 
+	//diagonal left to right going from corner + 1 to the right
 	for t := 1; t < len(mat[0]); t++ {
-		d := [] string{}
-		for i := 0; i < len(mat) - t; i++ {
+		d := []string{}
+		for i := 0; i < len(mat)-t; i++ {
 			d = append(d, mat[i][i+t])
 		}
 		diags = append(diags, d)
