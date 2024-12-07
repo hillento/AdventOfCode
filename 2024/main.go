@@ -38,8 +38,8 @@ func getInput(day int) string {
 
 func main() {
 
-	day := 6
+	day := 7
 	s := getInput(day)
-	Day6_1(s)
-	Day6_2(s)
+	Day7_1(s)
+	Day7_2(s)
 }
