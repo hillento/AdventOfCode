@@ -26,7 +26,6 @@ func Day2_1(input string) {
 	fmt.Printf("Day 2.1 solution: %d\n", safe)
 }
 
-// TODO: Remove the first instance of an error and double check
 func Day2_2(input string) {
 	lines := strings.Split(strings.TrimSpace(input), "\n")
 

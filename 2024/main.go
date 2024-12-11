@@ -34,12 +34,11 @@ func getInput(day int) string {
 	_ = os.WriteFile(filePath, body, 0664)
 
 	return string(body)
+
 }
 
 func main() {
-
-	day := 9
+	day := 11
 	s := getInput(day)
-	Day9_1(s)
-	Day9_2(s)
+	Day11(s)
 }
