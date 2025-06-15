@@ -37,9 +37,7 @@ func getInput(day int) string {
 }
 
 func main() {
-	day := 5
+	day := 7
 	i := getInput(day)
-	Day5_1(i)
-	Day5_2(i)
-
+	fmt.Println(i)
 }
