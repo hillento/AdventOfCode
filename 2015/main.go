@@ -37,7 +37,8 @@ func getInput(day int) string {
 }
 
 func main() {
-	day := 7
+
+	day := 8
 	i := getInput(day)
 	fmt.Println(i)
 }

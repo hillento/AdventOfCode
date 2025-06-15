@@ -15,6 +15,13 @@ type Lights struct {
 	grid map[Coordinate]int
 }
 
+func newLights() *Lights {
+	var l Lights
+	l.grid = make(map[Coordinate]int)
+	l.turnLights(Coordinate{x: 0, y: 0}, Coordinate{999, 999}, "off")
+	return &l
+}
+
 func Day6(input string, part int) {
 	lights := newLights()
 	on := 0
@@ -44,13 +51,6 @@ func Day6(input string, part int) {
 	}
 
 	fmt.Printf("Day 6 - Lights on: %d\n", on)
-}
-
-func newLights() *Lights {
-	var l Lights
-	l.grid = make(map[Coordinate]int)
-	l.turnLights(Coordinate{x: 0, y: 0}, Coordinate{999, 999}, "off")
-	return &l
 }
 
 func (l Lights) lightsBrightness(start Coordinate, end Coordinate, command string) {
