@@ -40,5 +40,6 @@ func main() {
 
 	day := 8
 	i := getInput(day)
-	fmt.Println(i)
+	Day8_1(i)
+	Day8_2(i)
 }
