@@ -38,7 +38,11 @@ func getInput(day int) string {
 
 func main() {
 
-	day := 19
+	// testInput := "H => HO\nH => OH\nO => HH\n\nHOHOHO"
+	// Day19(testInput)
+
+	day := 20
 	i := getInput(day)
-	Day19(i)
+	Day20(i, 1)
+	Day20(i, 2)
 }
