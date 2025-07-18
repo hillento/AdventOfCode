@@ -14,6 +14,12 @@ func getInput(day int) string {
 	fileName := fmt.Sprintf("Day%d.txt", day)
 	filePath := fmt.Sprintf("./inputs/%s", fileName)
 
+	//if the file already exists just return the file content
+	input, err := os.ReadFile(filePath)
+	if err == nil {
+		return string(input)
+	}
+
 	req, err := http.NewRequest("GET", url, nil)
 	if err != nil {
 		fmt.Println("Error creating request:", err)
@@ -41,8 +47,8 @@ func main() {
 	// testInput := "H => HO\nH => OH\nO => HH\n\nHOHOHO"
 	// Day19(testInput)
 
-	day := 20
+	day := 21
 	i := getInput(day)
-	Day20(i, 1)
-	Day20(i, 2)
+	Day21(i, 1)
+	Day21(i, 2)
 }
