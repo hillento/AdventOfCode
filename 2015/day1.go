@@ -1,4 +1,4 @@
-package main
+package fifteen
 
 import (
 	"fmt"
@@ -22,4 +22,3 @@ func Day1(input string) {
 	}
 	fmt.Printf("Day1_1 Solution: %d\n", floor)
 }
-

@@ -1,5 +1,5 @@
-module adventofcode/2015
+module AdventOfCode/fifteen
 
-go 1.24.3
+go 1.24.5
 
-require github.com/etnz/permute v1.0.2 // indirect
+require github.com/etnz/permute v1.0.2

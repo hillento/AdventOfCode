@@ -1,4 +1,4 @@
-package main
+package fifteen
 
 import (
 	"fmt"
@@ -42,4 +42,3 @@ func Day8_2(input string) {
 	}
 	fmt.Printf("Day 8.2 - Encoded character minus string characters: %d\n", encodeLen-originLen)
 }
-

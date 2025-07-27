@@ -1,4 +1,4 @@
-package main
+package fifteen
 
 import (
 	"fmt"
@@ -60,4 +60,3 @@ func checkString(input string) bool {
 	}
 	return (r1 && r2 && r3)
 }
-

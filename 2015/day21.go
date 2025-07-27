@@ -1,7 +1,7 @@
 // Turns: Player = n; Boss = n -1;
 // Boss damage - player armor * n-1 < player hp
 // player damage - boss armor * n  > = player hp
-package main
+package fifteen
 
 import (
 	"fmt"
