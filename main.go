@@ -49,8 +49,7 @@ func main() {
 	// Day19(testInput)
 
 	year := 2015
-	day := 22
+	day := 25
 	i := getInput(year, day)
-	fifteen.Day22(i, 1)
-	fifteen.Day22(i, 2)
+	fifteen.Day25(i, 1)
 }
