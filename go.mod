@@ -2,9 +2,7 @@ module adventofcode
 
 go 1.24.5
 
-require AdventOfCode/fifteen v0.0.0-00010101000000-000000000000
-
-require github.com/etnz/permute v1.0.2 // indirect
+require AdventOfCode/sixteen v0.0.0-00010101000000-000000000000
 
 replace AdventOfCode/fifteen => ./2015
 

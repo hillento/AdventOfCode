@@ -1,12 +1,15 @@
 package main
 
 import (
-	fifteen "AdventOfCode/fifteen"
+	// fifteen "AdventOfCode/fifteen"
+	sixteen "AdventOfCode/sixteen"
 	"fmt"
 	"io"
 	"net/http"
 	"os"
 )
+
+//Part 2 131 is too high
 
 func getInput(year, day int) string {
 
@@ -45,11 +48,12 @@ func getInput(year, day int) string {
 
 func main() {
 
-	// testInput := "H => HO\nH => OH\nO => HH\n\nHOHOHO"
-	// Day19(testInput)
+	// testInput := "aaaaa-bbb-z-y-x-123[abxyz]\na-b-c-d-e-f-g-h-987[abcde]\nnot-a-real-room-404[oarel]\ntotally-real-room-200[decoy]"
 
-	year := 2015
-	day := 25
+	// i := testInput
+	year := 2016
+	day := 4
 	i := getInput(year, day)
-	fifteen.Day25(i, 1)
+	sixteen.Day4(i, 1)
+	sixteen.Day4(i, 2)
 }
